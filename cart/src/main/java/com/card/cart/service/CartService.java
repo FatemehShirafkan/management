@@ -1,9 +1,9 @@
 package com.card.cart.service;
 
 import com.card.cart.client.ProductClient;
-import com.card.cart.client.UserClient;
+import com.card.cart.client.CustomerClient;
 import com.card.cart.entity.CartEntity;
-import com.card.cart.entity.dto.UserDTO;
+import com.card.cart.entity.dto.CustomerDTO;
 import com.card.cart.repository.CartRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -14,12 +14,12 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CartService {
     private final CartRepository repository;
-    private final UserClient userClient;
+    private final CustomerClient customerClient;
     private final ProductClient productClient;
 
 
     public List<CartEntity> findByUser(String username) {
-        UserDTO user = userClient.findUser(username);
+        CustomerDTO user = customerClient.findCustomer(username);
         return repository.findByUserId(user.getId());
     }
 }

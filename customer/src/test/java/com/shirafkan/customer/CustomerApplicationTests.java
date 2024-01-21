@@ -1,10 +1,10 @@
-package com.shirafkan.user;
+package com.shirafkan.customer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class UserApplicationTests {
+class CustomerApplicationTests {
 
     @Test
     void contextLoads() {
