@@ -1,6 +1,8 @@
-package com.shirafkan.customer.controller;
+package com.shirafkan.customer1.controller;
 
-import com.shirafkan.customer.service.CustomerService;
+
+import com.shirafkan.customer1.entity.CustomerEntity;
+import com.shirafkan.customer1.service.CustomerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +19,9 @@ public class CustomerController {
 
     @GetMapping("/getCustomer/{username}")
     public ResponseEntity<?> getCustomer(@PathVariable("username")String username){
-        return ResponseEntity.ok(customerService.findCustomer(username));
+
+        CustomerEntity customer = customerService.findCustomer(username);
+        System.out.println(customer.getUsername());
+        return ResponseEntity.ok(customer);
     }
 }
