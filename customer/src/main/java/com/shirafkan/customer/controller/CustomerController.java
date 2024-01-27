@@ -1,8 +1,9 @@
-package com.shirafkan.customer1.controller;
+package com.shirafkan.customer.controller;
 
 
-import com.shirafkan.customer1.entity.CustomerEntity;
-import com.shirafkan.customer1.service.CustomerService;
+
+import com.shirafkan.customer.entity.CustomerEntity;
+import com.shirafkan.customer.service.CustomerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

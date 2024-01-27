@@ -14,6 +14,7 @@
         <module name="user" />
         <module name="gateway" />
         <module name="cart" />
+        <module name="customer" />
       </profile>
     </annotationProcessing>
   </component>
@@ -22,6 +23,7 @@
       <module name="Customer1" options="-parameters" />
       <module name="cart" options="-parameters" />
       <module name="configServer" options="-parameters" />
+      <module name="customer" options="-parameters" />
       <module name="discovery" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="product" options="-parameters" />

@@ -1,9 +1,10 @@
-package com.shirafkan.customer1.service;
+package com.shirafkan.customer.service;
 
-import com.shirafkan.customer1.entity.CustomerEntity;
-import com.shirafkan.customer1.repository.CustomerRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import com.shirafkan.customer.repository.CustomerRepository;
+import com.shirafkan.customer.entity.CustomerEntity;
+
 
 @Service
 @RequiredArgsConstructor

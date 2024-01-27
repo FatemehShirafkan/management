@@ -1,13 +1,13 @@
-package com.shirafkan.customer1;
+package com.shirafkan.customer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Customer1Application {
+public class CustomerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Customer1Application.class, args);
+        SpringApplication.run(CustomerApplication.class, args);
     }
 
 }

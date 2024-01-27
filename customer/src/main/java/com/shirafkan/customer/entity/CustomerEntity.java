@@ -1,4 +1,4 @@
-package com.shirafkan.customer1.entity;
+package com.shirafkan.customer.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
